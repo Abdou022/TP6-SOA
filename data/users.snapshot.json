@@ -1,0 +1,14 @@
+[
+  {
+    "id": "e75a38dc-cc36-4368-a460-aa57624ebcf6",
+    "name": "Abderrahmen Attia",
+    "email": "abdou@example.com",
+    "password": "123456"
+  },
+  {
+    "id": "c4e66485-9c98-4520-84e0-66b70098754b",
+    "name": "Foulen",
+    "email": "foulen@gmail.com",
+    "password": "123456"
+  }
+]

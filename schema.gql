@@ -1,0 +1,39 @@
+type User {
+id: String!
+name: String!
+email: String!
+password: String!
+}
+type Query {
+user(id: String!): User
+users: [User!]!
+}
+type Mutation {
+addUser(name: String!, email: String!, password: String!): User
+updateUser(id: String!, name: String!, email: String!, password: String!): User
+deleteUser(id: String!): Boolean!
+}
+
+type Device{
+    id: String!
+    userId: String!
+    name: String!
+    type: String!
+    serialNumber: String!
+    status: String!
+}
+extend type Query {
+    devices: [Device! ]!
+    device(id :String!): Device
+    devicesByUser(userId: String!): [Device! ]!
+}
+extend type Mutation {
+  addDevice(
+    userId: String!,
+    name: String!,
+    type: String!,
+    serialNumber: String!,
+    status: String!
+  ): Device
+  deleteDevice(id: String!): Boolean!
+}
